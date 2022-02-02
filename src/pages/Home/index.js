@@ -2,11 +2,12 @@ import React from 'react';
 import { View, Text, StyleSheet, ScrollView, Image, TouchableOpacity } from 'react-native';
 
 import { MaterialIcons } from '@expo/vector-icons';
-import  { useNavigation } from '@react-navigation/native';
+import  { useNavigation } from '@react-navigation/native'; 
 
 import Shoes from '../../component/Shoes'
 
 export default function Home() {
+    const navigation = useNavigation();
     return (
         <View style={styles.container}>
             <View style={styles.header}>
@@ -35,28 +36,28 @@ export default function Home() {
                 <Text style = {styles.text}>LANÇAMENTOS</Text>
 
                 <View style = {{ flexDirection: 'row', justifyContent: 'space-around' }}>
-                    <Shoes img = {require('../../assets/1.png')} cost = "R$ 140,90">
+                    <Shoes img = {require('../../assets/1.png')} cost = "R$ 140,90" onClick={()=> navigation.navigate('Detail') }>
                         Nike Air Max
                     </Shoes>
-                    <Shoes img = {require('../../assets/2.png')} cost = "R$ 649,90">
+                    <Shoes img = {require('../../assets/2.png')} cost = "R$ 649,90" onClick={()=> navigation.navigate('Detail') }>
                         Nike Downshifter 10
                     </Shoes>
                 </View>
 
                 <View style = {{ flexDirection: 'row', justifyContent: 'space-around' }}>
-                    <Shoes img = {require('../../assets/3.png')} cost = "R$ 440,90">
+                    <Shoes img = {require('../../assets/3.png')} cost = "R$ 440,90" onClick={()=> alert('CLICOU') }>
                         Nike Flyease
                     </Shoes>
-                    <Shoes img = {require('../../assets/4.png')} cost = "R$ 349,90">
+                    <Shoes img = {require('../../assets/4.png')} cost = "R$ 349,90" onClick={()=> alert('CLICOU') }>
                         Nike Anti-Clog
                     </Shoes>
                 </View>
 
                 <View style = {{ flexDirection: 'row', justifyContent: 'space-around' }}>
-                    <Shoes img = {require('../../assets/1.png')} cost = "R$ 240,90">
+                    <Shoes img = {require('../../assets/1.png')} cost = "R$ 240,90" onClick={()=> alert('CLICOU') }>
                         Nike Free
                     </Shoes>
-                    <Shoes img = {require('../../assets/2.png')} cost = "R$ 199,99">
+                    <Shoes img = {require('../../assets/2.png')} cost = "R$ 199,99" onClick={()=> alert('CLICOU') }>
                         Nike Joyride
                     </Shoes>
                 </View>
