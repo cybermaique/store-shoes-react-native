@@ -4,7 +4,7 @@ import { View, Text, StyleSheet, ScrollView, Image, TouchableOpacity } from 'rea
 import { MaterialIcons } from '@expo/vector-icons';
 import  { useNavigation } from '@react-navigation/native'; 
 
-import Shoes from '../../component/Shoes'
+import Shoes from '../../component/Shoes';
 
 export default function Home() {
     const navigation = useNavigation();
