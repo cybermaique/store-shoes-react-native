@@ -1,6 +1,8 @@
 import React from 'react';
 import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet} from 'react-native';
 
+import Dot from '../../component/Dot'
+
 export default function Detail({ navigation }) {
  
   navigation.setOptions({
@@ -14,12 +16,18 @@ export default function Detail({ navigation }) {
         style={styles.image}
         resizeMode="cover"
         />
+
         <View>
           <Text style={[styles.title, {fontSize: 24}]}>R$ 280,90</Text>
         </View>
         <View opacity={0.4}>
           <Text style={[styles.title, {fontSize: 30}]}>Nike Downshifter 10</Text>
         </View>
+
+        <View style={styles.dotContainer}> 
+          <Dot/>
+        </View>
+
     </View>
   );
 } 
