@@ -33,7 +33,7 @@ export default function Home() {
             <View style = {styles.line} />
 
             <ScrollView>
-                <Text style = {styles.text}>LANÇAMENTOS</Text>
+                <Text style = {styles.text}>VOVÓ MARLI E MÃMÃE LINDAS</Text>
 
                 <View style = {{ flexDirection: 'row', justifyContent: 'space-around' }}>
                     <Shoes img = {require('../../assets/1.png')} cost = "R$ 140,90" onClick={()=> navigation.navigate('Detail') }>
