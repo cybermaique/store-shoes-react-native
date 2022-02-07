@@ -4,6 +4,7 @@ import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet} from 'reac
 import Dot from '../../component/Dot'
 import SizeShoes from '../../component/SizeShoes';
 import Button from '../../component/Button';
+import Footer from '../../component/Footer';
 
 export default function Detail({ navigation }) {
  
